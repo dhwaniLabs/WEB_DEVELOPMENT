@@ -1,0 +1,306 @@
+/*=====================================
+        GLOBAL STYLE
+=====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#edf6ff;
+    color:#333;
+}
+
+
+/*=====================================
+        HEADER
+=====================================*/
+
+header{
+    height:70px;
+    background:#03045E;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    font-size:32px;
+    color:#90E0EF;
+}
+
+.logo h2{
+    font-size:28px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+}
+
+.profile i{
+    font-size:28px;
+}
+
+
+/*=====================================
+        TITLE SECTION
+=====================================*/
+
+.title-section{
+    width:90%;
+    margin:35px auto;
+    padding:35px;
+    text-align:center;
+    color:white;
+    border-radius:18px;
+    background:linear-gradient(135deg,#03045E,#0077B6);
+}
+
+.title-section h1{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.title-section p{
+    font-size:17px;
+}
+
+
+/*=====================================
+        SEARCH & BUTTON
+=====================================*/
+
+.top-bar{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:20px;
+}
+
+.search-box{
+    flex:1;
+    display:flex;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.search-box input{
+    flex:1;
+    padding:15px;
+    border:none;
+    outline:none;
+    font-size:16px;
+}
+
+.search-box button{
+    width:60px;
+    border:none;
+    background:#0077B6;
+    color:white;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.clear-btn{
+    background:#ef233c;
+    color:white;
+    border:none;
+    padding:14px 22px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+.clear-btn:hover{
+    background:#b5172f;
+}
+
+
+/*=====================================
+        NOTIFICATION SECTION
+=====================================*/
+
+.notification-container{
+    width:90%;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.notification-card{
+    background:white;
+    display:flex;
+    align-items:center;
+    gap:20px;
+    padding:20px;
+    border-radius:15px;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.3s;
+    position:relative;
+}
+
+.notification-card:hover{
+    transform:translateY(-5px);
+}
+
+.notification-card.new{
+    border-left:6px solid #0077B6;
+}
+
+
+/*=====================================
+        ICONS
+=====================================*/
+
+.icon{
+    width:60px;
+    height:60px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:white;
+}
+
+.assignment{
+    background:#0077B6;
+}
+
+.marks{
+    background:#3a86ff;
+}
+
+.fee{
+    background:#2a9d8f;
+}
+
+.library{
+    background:#6a4c93;
+}
+
+.event{
+    background:#ff9f1c;
+}
+
+.faculty{
+    background:#e63946;
+}
+
+
+/*=====================================
+        CONTENT
+=====================================*/
+
+.content{
+    flex:1;
+}
+
+.content h3{
+    color:#03045E;
+    margin-bottom:8px;
+}
+
+.content p{
+    color:#555;
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+.content span{
+    color:#777;
+    font-size:14px;
+}
+
+
+/*=====================================
+        BADGES
+=====================================*/
+
+.badge{
+    padding:7px 15px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:bold;
+}
+
+.new-badge{
+    background:#caf0f8;
+    color:#03045E;
+}
+
+.read-badge{
+    background:#d8f3dc;
+    color:#2d6a4f;
+}
+
+
+/*=====================================
+        FOOTER
+=====================================*/
+
+footer{
+    margin-top:50px;
+    background:#03045E;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+
+/*=====================================
+        RESPONSIVE
+=====================================*/
+
+@media(max-width:768px){
+
+header{
+    padding:0 20px;
+}
+
+.logo h2{
+    font-size:22px;
+}
+
+.top-bar{
+    flex-direction:column;
+}
+
+.search-box{
+    width:100%;
+}
+
+.clear-btn{
+    width:100%;
+}
+
+.notification-card{
+    flex-direction:column;
+    align-items:flex-start;
+}
+
+.badge{
+    margin-top:10px;
+}
+}

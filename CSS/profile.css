@@ -1,0 +1,378 @@
+
+/* =========================================
+        GLOBAL STYLES
+========================================= */
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing : border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: #edf6ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* =========================================
+        HEADER
+========================================= */
+
+.profile-header {
+    height: 70px;
+    background: #03045E;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 50px;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.header-logo i {
+    font-size: 30px;
+    color: #90E0EF;
+}
+
+.header-logo h2 {
+    font-size: 26px;
+}
+
+.header-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 10px 16px;
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+.home-link:hover {
+    background: #0077B6;
+}
+
+
+/* =========================================
+        PROFILE CONTAINER
+========================================= */
+
+.profile-container {
+    width: 90%;
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+/* =========================================
+        PROFILE CARD
+========================================= */
+
+.profile-card {
+    background: white;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.10);
+
+    border-top: 5px solid #0077B6;
+}
+
+.profile-image {
+    width: 110px;
+    height: 110px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 50%;
+
+    background: #0077B6;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 50px;
+
+    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.3);
+}
+
+.profile-card h1 {
+    color: #03045E;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.student-role {
+    color: #0077B6;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.student-id {
+    color: #666;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.student-id i {
+    color: #0077B6;
+    margin-right: 5px;
+}
+
+
+/* =========================================
+        INFORMATION SECTION
+========================================= */
+
+.information-section {
+    background: white;
+
+    padding: 28px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+.information-section:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+        SECTION HEADING
+========================================= */
+
+.section-heading {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+
+    padding-bottom: 12px;
+
+    border-bottom: 2px solid #e1edf5;
+}
+
+.section-heading i {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #0077B6;
+    color: white;
+}
+
+.section-heading h2 {
+    color: #03045E;
+    font-size: 22px;
+}
+
+
+/* =========================================
+        INFORMATION GRID
+========================================= */
+
+.information-grid {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 18px 25px;
+}
+
+
+/* =========================================
+        INFORMATION ITEM
+========================================= */
+
+.information-item {
+    background: #f5faff;
+
+    border: 1px solid #dcebf5;
+
+    border-radius: 10px;
+
+    padding: 15px 18px;
+
+    display: flex;
+    flex-direction: column;
+
+    transition: 0.3s;
+}
+
+.information-item:hover {
+    border-color: #0077B6;
+
+    background: #eef8ff;
+}
+
+.label {
+    color: #777;
+
+    font-size: 13px;
+
+    margin-bottom: 4px;
+
+    font-weight: 600;
+
+    text-transform: uppercase;
+}
+
+.value {
+    color: #222;
+
+    font-size: 16px;
+
+    font-weight: 500;
+}
+
+
+/* =========================================
+        FOOTER
+========================================= */
+
+footer {
+    background: #03045E;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* =========================================
+        TABLET
+========================================= */
+
+@media (max-width: 768px) {
+
+    .profile-header {
+        height: auto;
+
+        padding: 15px 25px;
+
+        gap: 15px;
+
+        flex-wrap: wrap;
+    }
+
+    .header-logo h2 {
+        font-size: 22px;
+    }
+
+    .header-title {
+        font-size: 17px;
+    }
+
+    .profile-container {
+        width: 92%;
+    }
+
+    .information-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+/* =========================================
+        MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .profile-header {
+        flex-direction: column;
+
+        justify-content: center;
+
+        text-align: center;
+    }
+
+    .profile-card {
+        padding: 28px 15px;
+    }
+
+    .profile-card h1 {
+        font-size: 25px;
+    }
+
+    .student-role {
+        font-size: 15px;
+    }
+
+    .information-section {
+        padding: 20px 15px;
+    }
+
+    .section-heading h2 {
+        font-size: 19px;
+    }
+
+    .information-item {
+        padding: 13px;
+    }
+
+    .value {
+        font-size: 14px;
+    }
+
+    footer {
+        margin-top: 30px;
+    }
+
+}
+

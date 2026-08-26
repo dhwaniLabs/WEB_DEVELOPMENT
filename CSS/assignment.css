@@ -1,0 +1,619 @@
+/*=====================================
+        GLOBAL STYLE
+=====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+
+body{
+
+    background:#edf6ff;
+    color:#333;
+
+}
+
+
+/*=====================================
+        HEADER
+=====================================*/
+
+header{
+
+    height:70px;
+
+    background:#03045E;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 50px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+}
+
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.logo i{
+
+    font-size:32px;
+
+    color:#90E0EF;
+
+}
+
+
+.logo h2{
+
+    font-size:28px;
+
+}
+
+
+
+.profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    font-size:18px;
+
+}
+
+
+.profile i{
+
+    font-size:28px;
+
+}
+
+
+
+/*=====================================
+        TITLE SECTION
+=====================================*/
+
+
+.title-section{
+
+    width:90%;
+
+    margin:35px auto;
+
+    padding:35px;
+
+    text-align:center;
+
+    border-radius:18px;
+
+    color:white;
+
+    background:linear-gradient(135deg,#03045E,#0077B6);
+
+}
+
+
+.title-section h1{
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+
+.title-section p{
+
+    font-size:17px;
+
+}
+
+
+
+
+/*=====================================
+        SUMMARY CARDS
+=====================================*/
+
+
+.summary{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.summary-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+.summary-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+.summary-card i{
+
+    font-size:35px;
+
+    color:#0077B6;
+
+}
+
+
+.summary-card h2{
+
+    color:#03045E;
+
+    font-size:30px;
+
+    margin:10px;
+
+}
+
+
+
+/*=====================================
+        ASSIGNMENT SECTION
+=====================================*/
+
+
+.assignment-section{
+
+    width:90%;
+
+    margin:45px auto;
+
+}
+
+
+
+.assignment-section h2,
+.deadline-section h2{
+
+    color:#03045E;
+
+    margin-bottom:25px;
+
+    font-size:28px;
+
+}
+
+
+
+
+.assignment-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+
+.assignment-card{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+    transition:.3s;
+
+}
+
+
+.assignment-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+
+.card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:20px;
+
+}
+
+
+.card-header h3{
+
+    color:#03045E;
+
+    font-size:20px;
+
+}
+
+
+
+.assignment-card h4{
+
+    margin-bottom:15px;
+
+    font-size:17px;
+
+}
+
+
+.assignment-card p{
+
+    margin:10px 0;
+
+    color:#555;
+
+    font-size:14px;
+
+}
+
+
+.assignment-card p i{
+
+    color:#0077B6;
+
+    margin-right:8px;
+
+}
+
+
+
+/*=====================================
+        PRIORITY BADGES
+=====================================*/
+
+
+.high{
+
+    background:#ffccd5;
+
+    color:#c1121f;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+.medium{
+
+    background:#ffe5b4;
+
+    color:#9c5700;
+
+    padding:6px 12px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:bold;
+
+}
+
+
+
+
+
+/*=====================================
+        STATUS BUTTON
+=====================================*/
+
+
+.status{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-top:20px;
+
+}
+
+
+
+.pending{
+
+    background:#caf0f8;
+
+    color:#03045E;
+
+    padding:7px 15px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+}
+
+
+
+.status button{
+
+    background:#0077B6;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 20px;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+
+.status button:hover{
+
+    background:#03045E;
+
+}
+
+
+
+
+/*=====================================
+        DEADLINE TABLE
+=====================================*/
+
+
+.deadline-section{
+
+    width:90%;
+
+    margin:50px auto;
+
+}
+
+
+
+table{
+
+    width:100%;
+
+    background:white;
+
+    border-collapse:collapse;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.1);
+
+}
+
+
+thead{
+
+    background:#023E8A;
+
+    color:white;
+
+}
+
+
+
+th{
+
+    padding:18px;
+
+}
+
+
+
+td{
+
+    padding:16px;
+
+    text-align:center;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+
+
+tbody tr:hover{
+
+    background:#eef8ff;
+
+}
+
+
+
+
+/*=====================================
+        DEADLINE BADGES
+=====================================*/
+
+
+.urgent{
+
+    background:#ffccd5;
+
+    color:#c1121f;
+
+    padding:6px 15px;
+
+    border-radius:20px;
+
+}
+
+
+
+.normal{
+
+    background:#d8f3dc;
+
+    color:#2d6a4f;
+
+    padding:6px 15px;
+
+    border-radius:20px;
+
+}
+
+
+
+
+/*=====================================
+        FOOTER
+=====================================*/
+
+
+footer{
+
+    margin-top:50px;
+
+    background:#03045E;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+
+
+
+/*=====================================
+        RESPONSIVE DESIGN
+=====================================*/
+
+
+@media(max-width:1000px){
+
+
+.assignment-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+.summary{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+}
+
+
+
+@media(max-width:650px){
+
+
+header{
+
+    padding:0 20px;
+
+}
+
+
+
+.summary,
+.assignment-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+.title-section h1{
+
+    font-size:26px;
+
+}
+
+
+table{
+
+    min-width:700px;
+
+}
+
+
+.deadline-section{
+
+    overflow-x:auto;
+
+}
+
+
+}
