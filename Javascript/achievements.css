@@ -1,0 +1,627 @@
+/*====================================
+        GLOBAL STYLES
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#edf6ff;
+    color:#333;
+    line-height:1.6;
+}
+
+
+
+/*====================================
+            HEADER
+====================================*/
+
+header{
+
+    height:70px;
+    background:#03045E;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:30px;
+    color:#90E0EF;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+
+}
+
+.profile i{
+
+    font-size:28px;
+
+}
+
+
+
+/*====================================
+            HERO SECTION
+====================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#03045E,#0077B6);
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+
+/*====================================
+        STATISTICS SECTION
+====================================*/
+
+.stats{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.stat-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.3s;
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+.stat-card i{
+
+    font-size:42px;
+
+    color:#0077B6;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card h2{
+
+    color:#03045E;
+
+    font-size:34px;
+
+    margin-bottom:8px;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+    font-size:16px;
+
+}
+
+
+
+/*====================================
+      ACHIEVEMENT CONTAINER
+====================================*/
+
+.achievement-container{
+
+    width:90%;
+
+    margin:50px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+
+
+/*====================================
+        ACHIEVEMENT CARD
+====================================*/
+
+.achievement-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:28px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+}
+
+.achievement-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+
+
+/*====================================
+              ICON
+====================================*/
+
+.icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:0 auto 20px;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+
+
+/*====================================
+          CARD CONTENT
+====================================*/
+
+.achievement-card h3{
+
+    text-align:center;
+
+    color:#03045E;
+
+    margin-bottom:15px;
+
+    font-size:24px;
+
+}
+
+.achievement-card > p{
+
+    text-align:center;
+
+    color:#555;
+
+    margin-bottom:20px;
+
+}
+
+
+
+/*====================================
+            DETAILS
+====================================*/
+
+.details{
+
+    border-top:1px solid #dce6f2;
+
+    padding-top:18px;
+
+}
+
+.details p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:12px 0;
+
+    color:#444;
+
+}
+
+.details i{
+
+    width:22px;
+
+    color:#0077B6;
+
+}
+/*====================================
+        CATEGORY ICON COLORS
+====================================*/
+
+.student{
+    background:#0077B6;
+}
+
+.faculty{
+    background:#6A4C93;
+}
+
+.sports{
+    background:#F77F00;
+}
+
+.hackathon{
+    background:#2A9D8F;
+}
+
+.research{
+    background:#4361EE;
+}
+
+.patent{
+    background:#E63946;
+}
+
+.placement{
+    background:#1D3557;
+}
+
+.award{
+    background:#FFB703;
+}
+
+
+
+/*====================================
+        CARD TOP BORDER
+====================================*/
+
+.achievement-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.achievement-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#0077B6;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.achievement-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+
+/*====================================
+        ICON ANIMATION
+====================================*/
+
+.achievement-card:hover .icon{
+
+    transform:rotate(10deg) scale(1.08);
+
+    transition:.3s;
+
+}
+
+
+
+/*====================================
+        STAT CARD EFFECT
+====================================*/
+
+.stat-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.stat-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:#0077B6;
+
+    transform:scaleX(0);
+
+    transition:.4s;
+
+}
+
+.stat-card:hover::after{
+
+    transform:scaleX(1);
+
+}
+
+
+
+/*====================================
+            FOOTER
+====================================*/
+
+footer{
+
+    margin-top:50px;
+
+    background:#03045E;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+}
+
+footer p{
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+/*====================================
+        RESPONSIVE DESIGN
+====================================*/
+
+@media(max-width:992px){
+
+    header{
+
+        padding:0 25px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        gap:8px;
+
+        height:auto;
+
+        padding:15px;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .profile{
+
+        font-size:16px;
+
+    }
+
+    .hero{
+
+        padding:45px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .stats{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .achievement-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .achievement-card{
+
+        padding:22px;
+
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:24px;
+
+    }
+
+    .hero p{
+
+        font-size:14px;
+
+    }
+
+    .icon{
+
+        width:65px;
+
+        height:65px;
+
+        font-size:24px;
+
+    }
+
+    .stat-card h2{
+
+        font-size:28px;
+
+    }
+
+    .achievement-card h3{
+
+        font-size:20px;
+
+    }
+
+    .achievement-card p{
+
+        font-size:14px;
+
+    }
+
+    .details p{
+
+        font-size:13px;
+
+    }
+
+    footer{
+
+        font-size:14px;
+
+    }
+
+}

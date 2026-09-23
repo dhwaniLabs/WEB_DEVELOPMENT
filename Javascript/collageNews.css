@@ -1,0 +1,585 @@
+/*====================================
+        GLOBAL STYLES
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#edf6ff;
+    color:#333;
+}
+
+
+
+/*====================================
+            HEADER
+====================================*/
+
+header{
+
+    height:70px;
+    background:#03045E;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 50px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo i{
+
+    font-size:30px;
+    color:#90E0EF;
+
+}
+
+.logo h2{
+
+    font-size:28px;
+
+}
+
+.profile{
+
+    display:flex;
+    align-items:center;
+    gap:10px;
+    font-size:18px;
+
+}
+
+.profile i{
+
+    font-size:28px;
+
+}
+
+
+
+/*====================================
+            HERO
+====================================*/
+
+.hero{
+
+    background:linear-gradient(135deg,#03045E,#0077B6);
+
+    color:white;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+}
+
+.hero h1{
+
+    font-size:40px;
+
+    margin-bottom:12px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+
+
+/*====================================
+        SEARCH BAR
+====================================*/
+
+.search-section{
+
+    width:90%;
+
+    margin:35px auto;
+
+}
+
+.search-box{
+
+    display:flex;
+
+    background:white;
+
+    border-radius:10px;
+
+    overflow:hidden;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.12);
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    padding:15px;
+
+    border:none;
+
+    outline:none;
+
+    font-size:16px;
+
+}
+
+.search-box button{
+
+    width:60px;
+
+    border:none;
+
+    background:#0077B6;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.search-box button:hover{
+
+    background:#03045E;
+
+}
+
+
+
+/*====================================
+        NEWS GRID
+====================================*/
+
+.news-container{
+
+    width:90%;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+/*====================================
+            NEWS CARD
+====================================*/
+
+.news-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    transition:.35s;
+
+}
+
+.news-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 12px 25px rgba(0,0,0,.18);
+
+}
+
+
+
+/*====================================
+            ICON
+====================================*/
+
+.icon{
+
+    width:75px;
+
+    height:75px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    margin:auto;
+
+    margin-bottom:20px;
+
+    color:white;
+
+    font-size:28px;
+
+}
+
+
+
+/*====================================
+        CARD CONTENT
+====================================*/
+
+.news-card h3{
+
+    text-align:center;
+
+    color:#03045E;
+
+    margin-bottom:12px;
+
+    font-size:24px;
+
+}
+
+.news-card p{
+
+    color:#555;
+
+    line-height:1.6;
+
+}
+
+
+
+/*====================================
+        NEWS INFORMATION
+====================================*/
+
+.news-info{
+
+    margin-top:18px;
+
+    padding-top:18px;
+
+    border-top:1px solid #d9e6f2;
+
+}
+
+.news-info p{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin:10px 0;
+
+    color:#444;
+
+    font-size:15px;
+
+}
+
+.news-info i{
+
+    color:#0077B6;
+
+    width:22px;
+
+    text-align:center;
+
+}
+/*====================================
+        CATEGORY ICON COLORS
+====================================*/
+
+.event{
+    background:#0077B6;
+}
+
+.workshop{
+    background:#2A9D8F;
+}
+
+.seminar{
+    background:#9B5DE5;
+}
+
+.sports{
+    background:#F77F00;
+}
+
+.cultural{
+    background:#E63946;
+}
+
+.nss{
+    background:#38B000;
+}
+
+.club{
+    background:#00B4D8;
+}
+
+.lecture{
+    background:#6A4C93;
+}
+
+.placement{
+    background:#1D3557;
+}
+
+.facility{
+    background:#4CC9F0;
+}
+
+
+
+/*====================================
+        CARD ANIMATION
+====================================*/
+
+.news-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.news-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:#0077B6;
+
+    transform:scaleX(0);
+
+    transform-origin:left;
+
+    transition:.4s;
+
+}
+
+.news-card:hover::before{
+
+    transform:scaleX(1);
+
+}
+
+
+
+/*====================================
+        ICON HOVER EFFECT
+====================================*/
+
+.news-card:hover .icon{
+
+    transform:rotate(10deg) scale(1.08);
+
+    transition:.3s;
+
+}
+
+
+
+/*====================================
+        FOOTER
+====================================*/
+
+footer{
+
+    background:#03045E;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:50px;
+
+}
+
+footer p{
+
+    font-size:15px;
+
+    letter-spacing:.5px;
+
+}
+
+
+
+/*====================================
+        RESPONSIVE
+====================================*/
+
+@media(max-width:992px){
+
+    header{
+
+        padding:0 25px;
+
+    }
+
+    .hero h1{
+
+        font-size:34px;
+
+    }
+
+}
+
+
+
+@media(max-width:768px){
+
+    header{
+
+        flex-direction:column;
+
+        justify-content:center;
+
+        gap:8px;
+
+        height:auto;
+
+        padding:15px;
+
+    }
+
+    .logo h2{
+
+        font-size:22px;
+
+    }
+
+    .profile{
+
+        font-size:16px;
+
+    }
+
+    .hero{
+
+        padding:45px 20px;
+
+    }
+
+    .hero h1{
+
+        font-size:28px;
+
+    }
+
+    .hero p{
+
+        font-size:15px;
+
+    }
+
+    .search-box input{
+
+        font-size:14px;
+
+    }
+
+    .news-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .news-card{
+
+        padding:22px;
+
+    }
+
+}
+
+
+
+@media(max-width:480px){
+
+    .hero h1{
+
+        font-size:24px;
+
+    }
+
+    .hero p{
+
+        font-size:14px;
+
+    }
+
+    .icon{
+
+        width:65px;
+
+        height:65px;
+
+        font-size:24px;
+
+    }
+
+    .news-card h3{
+
+        font-size:20px;
+
+    }
+
+    .news-card p{
+
+        font-size:14px;
+
+    }
+
+    .news-info p{
+
+        font-size:13px;
+
+    }
+
+    footer{
+
+        font-size:14px;
+
+    }
+
+}
