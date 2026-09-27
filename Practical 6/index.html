@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>StudentSphere</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>StudentSphere</h1>
+        <p>Student Information Portal</p>
+    </header>
+
+    <nav>
+        <button onclick="showSection('events')">Events</button>
+        <button onclick="showSection('students')">Students</button>
+        <button onclick="showSection('notices')">Notices</button>
+        <button onclick="showSection('faqs')">FAQs</button>
+    </nav>
+
+    <main>
+
+        <section id="events">
+
+            <h2>Upcoming Events</h2>
+
+            <div class="controls">
+
+                <input
+                    type="text"
+                    id="eventSearch"
+                    placeholder="Search event..."
+                >
+
+                <select id="eventFilter">
+                    <option value="all">All Categories</option>
+                    <option value="Technical">Technical</option>
+                    <option value="Cultural">Cultural</option>
+                    <option value="Sports">Sports</option>
+                </select>
+
+                <select id="eventSort">
+                    <option value="default">Sort By</option>
+                    <option value="az">Name A-Z</option>
+                    <option value="za">Name Z-A</option>
+                </select>
+
+            </div>
+
+            <div id="eventList" class="card-container"></div>
+
+            <div id="eventPagination" class="pagination"></div>
+
+        </section>
+
+
+        <section id="students">
+
+            <h2>Student Profiles</h2>
+
+            <div class="controls">
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    placeholder="Search student..."
+                >
+
+                <select id="studentFilter">
+                    <option value="all">All Courses</option>
+                    <option value="CSE">CSE</option>
+                    <option value="IT">IT</option>
+                    <option value="ECE">ECE</option>
+                    <option value="Mechanical">Mechanical</option>
+                </select>
+
+                <select id="studentSort">
+                    <option value="default">Sort By</option>
+                    <option value="az">Name A-Z</option>
+                    <option value="za">Name Z-A</option>
+                    <option value="high">Marks High-Low</option>
+                    <option value="low">Marks Low-High</option>
+                </select>
+
+            </div>
+
+            <div id="studentList" class="card-container"></div>
+
+            <div id="studentPagination" class="pagination"></div>
+
+        </section>
+
+
+        <section id="notices">
+
+            <h2>Notices</h2>
+
+            <input
+                type="text"
+                id="noticeSearch"
+                placeholder="Search notice..."
+            >
+
+            <div id="noticeList"></div>
+
+        </section>
+
+
+        <section id="faqs">
+
+            <h2>Frequently Asked Questions</h2>
+
+            <div id="faqList"></div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>© 2026 StudentSphere</p>
+    </footer>
+
+
+    <script src="api.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
