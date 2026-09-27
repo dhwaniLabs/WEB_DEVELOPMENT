@@ -1,0 +1,462 @@
+/*====================================
+        GOOGLE FONT
+====================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/*====================================
+        GLOBAL STYLE
+====================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#edf6ff;
+    color:#333;
+}
+
+/*====================================
+        HEADER
+====================================*/
+
+header{
+    background:#03045E;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 50px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    font-size:32px;
+    color:#90E0EF;
+}
+
+.logo h2{
+    font-size:30px;
+    font-weight:600;
+}
+
+.student-profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.student-profile img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:3px solid white;
+    object-fit:cover;
+}
+
+.student-profile span{
+    font-size:16px;
+    font-weight:500;
+}
+
+/*====================================
+        PAGE TITLE
+====================================*/
+
+.page-title{
+    width:92%;
+    margin:35px auto;
+    padding:35px;
+    border-radius:18px;
+    background:linear-gradient(135deg,#03045E,#023E8A,#0077B6);
+    color:white;
+    text-align:center;
+}
+
+.page-title h1{
+    font-size:35px;
+    margin-bottom:10px;
+}
+
+.page-title p{
+    font-size:17px;
+    opacity:0.95;
+}
+
+/*====================================
+        SUMMARY CARDS
+====================================*/
+
+.summary{
+    width:92%;
+    margin:35px auto;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:22px;
+}
+
+.card{
+    background:white;
+    padding:28px;
+    border-radius:18px;
+    text-align:center;
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card i{
+    font-size:40px;
+    color:#0077B6;
+    margin-bottom:15px;
+}
+
+.card h2{
+    font-size:28px;
+    color:#03045E;
+    margin-bottom:8px;
+}
+
+.card p{
+    color:#666;
+    font-size:15px;
+}
+
+/*====================================
+        TABLE SECTION
+====================================*/
+
+.table-section{
+    width:95%;
+    margin:40px auto;
+}
+
+.table-section h2{
+    text-align:center;
+    color:#03045E;
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+.table-container{
+    overflow-x:auto;
+    background:white;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+table{
+    width:100%;
+    min-width:1200px;
+    border-collapse:collapse;
+}
+
+thead{
+    background:#023E8A;
+    color:white;
+}
+
+thead th{
+    padding:18px;
+    border:1px solid rgba(255,255,255,.15);
+    font-size:16px;
+}
+
+tbody td{
+    padding:15px;
+    border:1px solid #e5e5e5;
+    text-align:center;
+    vertical-align:top;
+    transition:.3s;
+}
+
+tbody tr:nth-child(even){
+    background:#fafafa;
+}
+
+tbody tr:hover{
+    background:#eef8ff;
+}
+
+/*====================================
+        TIME COLUMN
+====================================*/
+
+.time{
+    background:#CAF0F8;
+    color:#03045E;
+    font-weight:600;
+    width:150px;
+    vertical-align:middle;
+}
+
+/*====================================
+        SUBJECT DETAILS
+====================================*/
+
+td h4{
+    color:#03045E;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+td p{
+    font-size:13px;
+    color:#555;
+    margin:6px 0;
+}
+
+td p i{
+    color:#0077B6;
+    margin-right:5px;
+}
+
+/*====================================
+        BREAK ROW
+====================================*/
+
+.break-row td{
+    background:#90E0EF;
+    color:#03045E;
+    font-size:18px;
+    font-weight:600;
+    padding:18px;
+}
+/*====================================
+        REMARKS SECTION
+====================================*/
+
+.remarks{
+    width:92%;
+    margin:50px auto;
+    background:#ffffff;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.remarks h2{
+    color:#03045E;
+    font-size:28px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.remarks ul{
+    padding-left:25px;
+}
+
+.remarks li{
+    margin-bottom:12px;
+    font-size:16px;
+    line-height:1.8;
+    color:#444;
+}
+
+/*====================================
+        FOOTER
+====================================*/
+
+footer{
+    background:#03045E;
+    color:white;
+    text-align:center;
+    padding:25px 20px;
+    margin-top:50px;
+}
+
+footer p{
+    margin:6px 0;
+    font-size:15px;
+    color:#ffffff;
+}
+
+/*====================================
+        HOVER EFFECTS
+====================================*/
+
+.card{
+    transition:0.35s ease;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,0.18);
+}
+
+tbody td{
+    transition:0.3s ease;
+}
+
+tbody td:hover{
+    background:#CAF0F8;
+    transform:scale(1.02);
+    cursor:pointer;
+}
+
+/*====================================
+        SMOOTH ANIMATION
+====================================*/
+
+.page-title,
+.card,
+.table-container,
+.remarks{
+    animation:fadeUp 0.8s ease;
+}
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(25px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+/*====================================
+        CUSTOM SCROLLBAR
+====================================*/
+
+::-webkit-scrollbar{
+    width:10px;
+    height:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#dceeff;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0077B6;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#023E8A;
+}
+
+/*====================================
+        RESPONSIVE DESIGN
+====================================*/
+
+@media (max-width:992px){
+
+    .summary{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+
+@media (max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:15px;
+        padding:20px;
+        text-align:center;
+    }
+
+    .student-profile{
+        flex-direction:column;
+    }
+
+    .page-title{
+        padding:25px;
+    }
+
+    .page-title h1{
+        font-size:28px;
+    }
+
+    .summary{
+        grid-template-columns:1fr;
+    }
+
+    .table-container{
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:1200px;
+    }
+
+    .remarks{
+        padding:20px;
+    }
+
+}
+
+@media (max-width:480px){
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .student-profile img{
+        width:45px;
+        height:45px;
+    }
+
+    .student-profile span{
+        font-size:14px;
+    }
+
+    .page-title h1{
+        font-size:24px;
+    }
+
+    .page-title p{
+        font-size:14px;
+    }
+
+    .card{
+        padding:22px;
+    }
+
+    .card h2{
+        font-size:24px;
+    }
+
+    .card i{
+        font-size:34px;
+    }
+
+    td h4{
+        font-size:14px;
+    }
+
+    td p{
+        font-size:12px;
+    }
+
+    .remarks h2{
+        font-size:22px;
+    }
+
+    .remarks li{
+        font-size:14px;
+    }
+
+    footer p{
+        font-size:13px;
+    }
+
+}

@@ -1,0 +1,129 @@
+{
+    "student": {
+        "name": "Dhwani"
+    },
+
+    "news": [
+
+        {
+            "id": 1,
+            "type": "event",
+            "icon": "fa-calendar-days",
+            "title": "Campus Events",
+            "description": "Annual TechFest 2026 featuring coding competitions, project exhibitions and innovation showcase.",
+            "date": "15 August 2026",
+            "location": "Main Auditorium",
+            "organizer": "Student Council",
+            "personIcon": "fa-user-group"
+        },
+
+        {
+            "id": 2,
+            "type": "workshop",
+            "icon": "fa-laptop-code",
+            "title": "Workshop",
+            "description": "AI & Machine Learning Workshop with hands-on sessions conducted by industry professionals.",
+            "date": "18 August 2026",
+            "location": "Computer Lab 2",
+            "organizer": "Computer Department",
+            "personIcon": "fa-user"
+        },
+
+        {
+            "id": 3,
+            "type": "seminar",
+            "icon": "fa-microphone",
+            "title": "Seminar",
+            "description": "Seminar on Cyber Security and latest technology trends for engineering students.",
+            "date": "22 August 2026",
+            "location": "Seminar Hall",
+            "organizer": "IT Department",
+            "personIcon": "fa-user"
+        },
+
+        {
+            "id": 4,
+            "type": "sports",
+            "icon": "fa-futbol",
+            "title": "Sports Activities",
+            "description": "Inter-college Cricket, Volleyball, Badminton and Chess Championship.",
+            "date": "25 August 2026",
+            "location": "Sports Ground",
+            "organizer": "Sports Committee",
+            "personIcon": "fa-user-group"
+        },
+
+        {
+            "id": 5,
+            "type": "cultural",
+            "icon": "fa-masks-theater",
+            "title": "Cultural Fest",
+            "description": "Dance, Singing, Drama, Fashion Show and Musical Night organized for all students.",
+            "date": "30 August 2026",
+            "location": "Open Air Theatre",
+            "organizer": "Cultural Club",
+            "personIcon": "fa-user-group"
+        },
+
+        {
+            "id": 6,
+            "type": "nss",
+            "icon": "fa-seedling",
+            "title": "NSS Activities",
+            "description": "Blood Donation Camp, Tree Plantation Drive and Swachh Bharat Awareness Program.",
+            "date": "05 September 2026",
+            "location": "College Campus",
+            "organizer": "NSS Unit",
+            "personIcon": "fa-user-group"
+        },
+
+        {
+            "id": 7,
+            "type": "club",
+            "icon": "fa-users",
+            "title": "Student Clubs",
+            "description": "Robotics Club, Coding Club, Photography Club and Music Club activities.",
+            "date": "Every Friday",
+            "location": "Activity Centre",
+            "organizer": "Club Coordinators",
+            "personIcon": "fa-user-group"
+        },
+
+        {
+            "id": 8,
+            "type": "lecture",
+            "icon": "fa-chalkboard-user",
+            "title": "Guest Lecture",
+            "description": "Guest lecture by Google Software Engineer on Artificial Intelligence and Career Opportunities.",
+            "date": "12 September 2026",
+            "location": "Conference Hall",
+            "organizer": "Training & Placement Cell",
+            "personIcon": "fa-user"
+        },
+
+        {
+            "id": 9,
+            "type": "placement",
+            "icon": "fa-briefcase",
+            "title": "Placement Drive",
+            "description": "TCS, Infosys, Wipro and Accenture Campus Recruitment Drive for final year students.",
+            "date": "20 September 2026",
+            "location": "Placement Cell",
+            "organizer": "T&P Department",
+            "personIcon": "fa-user-group"
+        },
+
+        {
+            "id": 10,
+            "type": "facility",
+            "icon": "fa-building",
+            "title": "New Facilities",
+            "description": "New AI Laboratory, Digital Library, Smart Classrooms and Innovation Centre inaugurated.",
+            "date": "Recently Updated",
+            "location": "Engineering Block",
+            "organizer": "College Administration",
+            "personIcon": "fa-user-group"
+        }
+
+    ]
+}

@@ -1,0 +1,69 @@
+{
+    "student": {
+        "name": "Dhwani"
+    },
+
+    "notifications": [
+
+        {
+            "id": 1,
+            "type": "assignment",
+            "icon": "fa-file-circle-check",
+            "title": "Assignment Submitted Successfully",
+            "message": "Your Computer Networks assignment has been submitted successfully.",
+            "time": "Today • 10:30 AM",
+            "status": "new"
+        },
+
+        {
+            "id": 2,
+            "type": "marks",
+            "icon": "fa-chart-column",
+            "title": "Internal Marks Published",
+            "message": "Internal marks for Database Management System are now available.",
+            "time": "Yesterday • 4:15 PM",
+            "status": "read"
+        },
+
+        {
+            "id": 3,
+            "type": "fee",
+            "icon": "fa-wallet",
+            "title": "Fee Payment Confirmation",
+            "message": "Your semester fee payment of ₹60,000 has been received.",
+            "time": "01 Aug 2026 • 11:45 AM",
+            "status": "read"
+        },
+
+        {
+            "id": 4,
+            "type": "library",
+            "icon": "fa-book",
+            "title": "Library Due Reminder",
+            "message": "Return \"Computer Networks\" book before 08 Aug 2026.",
+            "time": "Today • 9:00 AM",
+            "status": "new"
+        },
+
+        {
+            "id": 5,
+            "type": "event",
+            "icon": "fa-calendar-check",
+            "title": "Event Registration Confirmed",
+            "message": "You have successfully registered for TechFest 2026.",
+            "time": "31 Jul 2026 • 2:20 PM",
+            "status": "read"
+        },
+
+        {
+            "id": 6,
+            "type": "faculty",
+            "icon": "fa-envelope",
+            "title": "New Message from Faculty",
+            "message": "Dr. R. Patel shared important guidelines for the upcoming practical exam.",
+            "time": "Today • 8:10 AM",
+            "status": "new"
+        }
+
+    ]
+}

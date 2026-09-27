@@ -1,0 +1,83 @@
+{
+    "student": {
+        "name": "Dhwani"
+    },
+
+    "summary": {
+        "currentSGPA": "8.7",
+        "overallCGPA": "8.5",
+        "performanceGrade": "A+",
+        "totalCredits": "22"
+    },
+
+    "semesters": [
+
+        {
+            "name": "Semester 1",
+            "sgpa": "8.5",
+            "progress": 85
+        },
+
+        {
+            "name": "Semester 2",
+            "sgpa": "8.8",
+            "progress": 88
+        },
+
+        {
+            "name": "Semester 3",
+            "sgpa": "8.7",
+            "progress": 87
+        }
+
+    ],
+
+    "subjects": [
+
+        {
+            "subject": "Computer Networks",
+            "internal": 38,
+            "external": 55,
+            "total": 93,
+            "grade": "A+",
+            "status": "Pass"
+        },
+
+        {
+            "subject": "Data Structures",
+            "internal": 36,
+            "external": 52,
+            "total": 88,
+            "grade": "A",
+            "status": "Pass"
+        },
+
+        {
+            "subject": "Database Management System",
+            "internal": 39,
+            "external": 54,
+            "total": 93,
+            "grade": "A+",
+            "status": "Pass"
+        },
+
+        {
+            "subject": "Web Development",
+            "internal": 35,
+            "external": 50,
+            "total": 85,
+            "grade": "A",
+            "status": "Pass"
+        },
+
+        {
+            "subject": "Mathematics",
+            "internal": 37,
+            "external": 48,
+            "total": 85,
+            "grade": "A",
+            "status": "Pass"
+        }
+
+    ]
+}

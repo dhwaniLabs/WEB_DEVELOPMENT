@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Result & Semester Progress | StudentSphere</title>
+
+    <link rel="stylesheet" href="quick.css">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="logo">
+
+            <i class="fa-solid fa-graduation-cap"></i>
+
+            <h2>StudentSphere</h2>
+
+        </div>
+
+        <div class="profile">
+
+            <i class="fa-solid fa-user-circle"></i>
+
+            <span>Dhwani</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- TITLE -->
+
+    <section class="title-section">
+
+        <h1>Result & Semester Progress</h1>
+
+        <p>Academic Performance Overview | Semester 3</p>
+
+    </section>
+
+
+    <!-- PERFORMANCE SUMMARY -->
+
+    <section class="summary">
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h2>0</h2>
+
+            <p>Current SGPA</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-chart-line"></i>
+
+            <h2>0</h2>
+
+            <p>Overall CGPA</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h2>-</h2>
+
+            <p>Performance Grade</p>
+
+        </div>
+
+        <div class="summary-card">
+
+            <i class="fa-solid fa-book-open"></i>
+
+            <h2>0</h2>
+
+            <p>Total Credits</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- SEMESTER PROGRESS -->
+
+    <section class="progress-section">
+
+        <h2>Semester Progress</h2>
+
+        <div class="progress-box" id="progressBox">
+
+            <!-- Semester progress loaded from JSON -->
+
+        </div>
+
+    </section>
+
+
+    <!-- SUBJECT RESULT -->
+
+    <section class="result-section">
+
+        <h2>Semester 3 Result</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Subject</th>
+                        <th>Internal Marks</th>
+                        <th>External Marks</th>
+                        <th>Total</th>
+                        <th>Grade</th>
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody id="resultTable">
+
+                    <!-- Result loaded from JSON -->
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 StudentSphere | Result Portal
+        </p>
+
+    </footer>
+
+
+    <script src="quick.js"></script>
+
+</body>
+
+</html>
